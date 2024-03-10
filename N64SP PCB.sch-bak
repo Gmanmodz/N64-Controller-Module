@@ -1,0 +1,824 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C2
+U 1 1 5E88748F
+P 8100 5400
+F 0 "C2" V 7848 5400 50  0000 C CNN
+F 1 "1uF" V 7939 5400 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:C_0402_custom" H 8138 5250 50  0001 C CNN
+F 3 "~" H 8100 5400 50  0001 C CNN
+	1    8100 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5E8ADCCA
+P 8250 5400
+F 0 "#PWR0129" H 8250 5150 50  0001 C CNN
+F 1 "GND" V 8255 5272 50  0000 R CNN
+F 2 "" H 8250 5400 50  0001 C CNN
+F 3 "" H 8250 5400 50  0001 C CNN
+	1    8250 5400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 8150 3700 2    50   Input ~ 0
+DL
+Text GLabel 8150 3800 2    50   Input ~ 0
+DR
+Text GLabel 8150 4000 2    50   Input ~ 0
+DD
+Text GLabel 8150 3900 2    50   Input ~ 0
+DU
+Text GLabel 8150 3450 2    50   Input ~ 0
+CU
+Text GLabel 8150 3550 2    50   Input ~ 0
+CD
+Text GLabel 8150 3250 2    50   Input ~ 0
+CL
+Text GLabel 8150 3350 2    50   Input ~ 0
+CR
+Text GLabel 8150 2550 2    50   Input ~ 0
+A
+Text GLabel 8150 2650 2    50   Input ~ 0
+B
+Text GLabel 8150 2750 2    50   Input ~ 0
+S
+Text GLabel 8150 3000 2    50   Input ~ 0
+R
+Text GLabel 8150 2900 2    50   Input ~ 0
+L
+Text GLabel 8150 3100 2    50   Input ~ 0
+Z
+$Comp
+L power:GND #PWR0135
+U 1 1 5E4E7AF6
+P 8150 2200
+F 0 "#PWR0135" H 8150 1950 50  0001 C CNN
+F 1 "GND" V 8155 2027 50  0000 C CNN
+F 2 "" H 8150 2200 50  0001 C CNN
+F 3 "" H 8150 2200 50  0001 C CNN
+	1    8150 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L N64SP-PCB-rescue:CNT-NUS-N64SP_parts-N64SP-PCB-rescue-N64SP-PCB-rescue U1
+U 1 1 5F3048E4
+P 7000 6400
+F 0 "U1" H 7150 6350 50  0000 L CNN
+F 1 "CNT-NUS" H 7000 6250 50  0000 L CNN
+F 2 "N64SP PCB V2_footprints:CNT-NUS" H 6150 7200 50  0001 C CNN
+F 3 "" H 6150 7200 50  0001 C CNN
+	1    7000 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND3 Y1
+U 1 1 5F307F49
+P 9350 6400
+F 0 "Y1" H 9350 6668 50  0000 C CNN
+F 1 "Crystal_GND3" H 9350 6577 50  0000 C CNN
+F 2 "N64SP PCB V2_footprints:NUS-OSC" H 9350 6400 50  0001 C CNN
+F 3 "~" H 9350 6400 50  0001 C CNN
+	1    9350 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 9200 6400 0    50   Input ~ 0
+OSC1
+Text GLabel 9800 6000 2    50   Input ~ 0
+OSC2
+Text GLabel 5750 6800 0    50   Input ~ 0
+OSC1
+Text GLabel 5750 6900 0    50   Input ~ 0
+OSC2
+$Comp
+L power:GND #PWR0114
+U 1 1 5F30D1A4
+P 9350 6600
+F 0 "#PWR0114" H 9350 6350 50  0001 C CNN
+F 1 "GND" H 9355 6427 50  0000 C CNN
+F 2 "" H 9350 6600 50  0001 C CNN
+F 3 "" H 9350 6600 50  0001 C CNN
+	1    9350 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F30E48D
+P 9350 6000
+F 0 "R1" V 9143 6000 50  0000 C CNN
+F 1 "1M" V 9234 6000 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:R_0402_custom" V 9280 6000 50  0001 C CNN
+F 3 "~" H 9350 6000 50  0001 C CNN
+	1    9350 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 6400 9200 6000
+Wire Wire Line
+	9500 6400 9500 6000
+$Comp
+L Device:R R7
+U 1 1 5F330CD3
+P 9650 6000
+F 0 "R7" V 9443 6000 50  0000 C CNN
+F 1 "5.6k" V 9534 6000 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:R_0402_custom" V 9580 6000 50  0001 C CNN
+F 3 "~" H 9650 6000 50  0001 C CNN
+	1    9650 6000
+	0    1    1    0   
+$EndComp
+Connection ~ 9500 6000
+$Comp
+L power:GND #PWR0119
+U 1 1 5F345277
+P 5750 5800
+F 0 "#PWR0119" H 5750 5550 50  0001 C CNN
+F 1 "GND" V 5755 5672 50  0000 R CNN
+F 2 "" H 5750 5800 50  0001 C CNN
+F 3 "" H 5750 5800 50  0001 C CNN
+	1    5750 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 5F346729
+P 5750 6300
+F 0 "#PWR0128" H 5750 6050 50  0001 C CNN
+F 1 "GND" V 5755 6172 50  0000 R CNN
+F 2 "" H 5750 6300 50  0001 C CNN
+F 3 "" H 5750 6300 50  0001 C CNN
+	1    5750 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 5F347878
+P 5750 6500
+F 0 "#PWR0130" H 5750 6250 50  0001 C CNN
+F 1 "GND" V 5755 6372 50  0000 R CNN
+F 2 "" H 5750 6500 50  0001 C CNN
+F 3 "" H 5750 6500 50  0001 C CNN
+	1    5750 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5F3488EA
+P 5750 6700
+F 0 "#PWR0136" H 5750 6450 50  0001 C CNN
+F 1 "GND" V 5755 6572 50  0000 R CNN
+F 2 "" H 5750 6700 50  0001 C CNN
+F 3 "" H 5750 6700 50  0001 C CNN
+	1    5750 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0137
+U 1 1 5F349C9C
+P 7950 7350
+F 0 "#PWR0137" H 7950 7100 50  0001 C CNN
+F 1 "GND" H 7955 7177 50  0000 C CNN
+F 2 "" H 7950 7350 50  0001 C CNN
+F 3 "" H 7950 7350 50  0001 C CNN
+	1    7950 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 7350 7850 7350
+Connection ~ 7950 7350
+$Comp
+L power:GND #PWR0138
+U 1 1 5F35A675
+P 8200 5800
+F 0 "#PWR0138" H 8200 5550 50  0001 C CNN
+F 1 "GND" V 8205 5672 50  0000 R CNN
+F 2 "" H 8200 5800 50  0001 C CNN
+F 3 "" H 8200 5800 50  0001 C CNN
+	1    8200 5800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7950 5400 1    50   Input ~ 0
+3V3
+Text GLabel 7250 5400 1    50   Input ~ 0
+3V3
+Text GLabel 5750 7000 0    50   Input ~ 0
+3V3
+Text GLabel 7050 7350 3    50   Input ~ 0
+3V3
+Text GLabel 5750 6400 0    50   Input ~ 0
+L
+Text GLabel 6250 7350 3    50   Input ~ 0
+DR
+Text GLabel 6150 7350 3    50   Input ~ 0
+3V3
+Text GLabel 6350 7350 3    50   Input ~ 0
+DU
+Text GLabel 6450 7350 3    50   Input ~ 0
+DL
+Text GLabel 6550 7350 3    50   Input ~ 0
+DD
+Text GLabel 7150 7350 3    50   Input ~ 0
+S
+Text GLabel 7250 7350 3    50   Input ~ 0
+A
+Text GLabel 7350 7350 3    50   Input ~ 0
+CD
+Text GLabel 7450 7350 3    50   Input ~ 0
+CR
+Text GLabel 7550 7350 3    50   Input ~ 0
+B
+Text GLabel 7650 7350 3    50   Input ~ 0
+CL
+Text GLabel 7750 7350 3    50   Input ~ 0
+CU
+Text GLabel 8200 7000 2    50   Input ~ 0
+Z
+Text GLabel 8200 6900 2    50   Input ~ 0
+R
+Text GLabel 8200 6800 2    50   Input ~ 0
+DATA
+Wire Wire Line
+	8200 6800 8200 6700
+$Comp
+L N64SP-PCB-rescue:16F15324-N64_PMS-cache-N64SP-PCB-rescue U13
+U 1 1 5F315338
+P 11400 6450
+F 0 "U13" H 12394 6528 60  0000 L CNN
+F 1 "Wii_reg-cache_pic16f15324_PIC16F15324-N64_PMS-cache" H 12394 6422 60  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm" H 11400 7000 60  0001 C CNN
+F 3 "" H 11400 7000 60  0001 C CNN
+	1    11400 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C36
+U 1 1 5F31A1A4
+P 11500 5650
+F 0 "C36" V 11248 5650 50  0000 C CNN
+F 1 ".1uF" V 11339 5650 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:C_0402_custom" H 11538 5500 50  0001 C CNN
+F 3 "~" H 11500 5650 50  0001 C CNN
+	1    11500 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11350 5800 11350 5650
+Wire Wire Line
+	11650 5800 11650 5650
+$Comp
+L power:GND #PWR0139
+U 1 1 5F3373DC
+P 11650 5650
+F 0 "#PWR0139" H 11650 5400 50  0001 C CNN
+F 1 "GND" V 11655 5522 50  0000 R CNN
+F 2 "" H 11650 5650 50  0001 C CNN
+F 3 "" H 11650 5650 50  0001 C CNN
+	1    11650 5650
+	0    -1   -1   0   
+$EndComp
+Connection ~ 11650 5650
+Text GLabel 11350 5650 1    50   Input ~ 0
+3V3
+Wire Wire Line
+	11250 5800 11250 5300
+Wire Wire Line
+	11250 5300 11650 5300
+Wire Wire Line
+	11650 5300 11650 5650
+$Comp
+L Connector:Conn_01x05_Female J2
+U 1 1 5F349605
+P 12550 5750
+F 0 "J2" V 12488 5462 50  0000 R CNN
+F 1 "Conn_01x05_Female" V 12397 5462 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 12550 5750 50  0001 C CNN
+F 3 "~" H 12550 5750 50  0001 C CNN
+	1    12550 5750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 12750 5950 3    50   Input ~ 0
+MCLR
+$Comp
+L power:GND #PWR0140
+U 1 1 5F37BF0D
+P 12350 5950
+F 0 "#PWR0140" H 12350 5700 50  0001 C CNN
+F 1 "GND" H 12355 5777 50  0000 C CNN
+F 2 "" H 12350 5950 50  0001 C CNN
+F 3 "" H 12350 5950 50  0001 C CNN
+	1    12350 5950
+	1    0    0    -1  
+$EndComp
+Text GLabel 12450 5950 3    50   Input ~ 0
+3V3
+Text GLabel 10750 6450 0    50   Input ~ 0
+MCLR
+Text GLabel 6650 7350 3    50   Input ~ 0
+XA
+Text GLabel 6750 7350 3    50   Input ~ 0
+XB
+Text GLabel 6850 7350 3    50   Input ~ 0
+YB
+Text GLabel 6950 7350 3    50   Input ~ 0
+YA
+Text GLabel 10750 6250 0    50   Input ~ 0
+YA
+Text GLabel 10750 6550 0    50   Input ~ 0
+YB
+Text GLabel 11550 7050 3    50   Input ~ 0
+XA
+Text GLabel 11450 7050 3    50   Input ~ 0
+XB
+Text GLabel 11350 7050 3    50   Input ~ 0
+SX
+Text GLabel 10750 6350 0    50   Input ~ 0
+SY
+Text GLabel 8150 2300 2    50   Input ~ 0
+3V3
+Text GLabel 8150 2400 2    50   Input ~ 0
+DATA
+$Comp
+L N64SP-PCB-rescue:FM28V020-N64SP_parts-N64SP-PCB-rescue-N64SP-PCB-rescue U14
+U 1 1 5F50B81F
+P 4300 6450
+F 0 "U14" H 4300 7325 50  0000 C CNN
+F 1 "FM28V020" H 4300 7234 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 4150 7300 50  0001 C CNN
+F 3 "" H 4150 7300 50  0001 C CNN
+	1    4300 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 5F50D60F
+P 3950 7100
+F 0 "#PWR0142" H 3950 6850 50  0001 C CNN
+F 1 "GND" V 3955 6972 50  0000 R CNN
+F 2 "" H 3950 7100 50  0001 C CNN
+F 3 "" H 3950 7100 50  0001 C CNN
+	1    3950 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C37
+U 1 1 5F50FC43
+P 4850 5800
+F 0 "C37" V 4598 5800 50  0000 C CNN
+F 1 "1uF" V 4689 5800 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:C_0402_custom" H 4888 5650 50  0001 C CNN
+F 3 "~" H 4850 5800 50  0001 C CNN
+	1    4850 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0143
+U 1 1 5F511052
+P 5000 5800
+F 0 "#PWR0143" H 5000 5550 50  0001 C CNN
+F 1 "GND" V 5005 5672 50  0000 R CNN
+F 2 "" H 5000 5800 50  0001 C CNN
+F 3 "" H 5000 5800 50  0001 C CNN
+	1    5000 5800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4700 5800 1    50   Input ~ 0
+3V3
+Wire Wire Line
+	4700 5800 4650 5800
+Text GLabel 3950 5800 0    50   Input ~ 0
+A14
+Text GLabel 8200 5900 2    50   Input ~ 0
+A14
+Text GLabel 7850 5400 1    50   Input ~ 0
+A12
+Text GLabel 7750 5400 1    50   Input ~ 0
+A7
+Text GLabel 3950 5900 0    50   Input ~ 0
+A12
+Text GLabel 3950 6000 0    50   Input ~ 0
+A7
+Text GLabel 3950 6100 0    50   Input ~ 0
+A6
+Text GLabel 3950 6200 0    50   Input ~ 0
+A5
+Text GLabel 3950 6300 0    50   Input ~ 0
+A4
+Text GLabel 3950 6400 0    50   Input ~ 0
+A3
+Text GLabel 3950 6500 0    50   Input ~ 0
+A2
+Text GLabel 3950 6600 0    50   Input ~ 0
+A1
+Text GLabel 3950 6700 0    50   Input ~ 0
+A0
+Text GLabel 7650 5400 1    50   Input ~ 0
+A6
+Text GLabel 7550 5400 1    50   Input ~ 0
+A5
+Text GLabel 7450 5400 1    50   Input ~ 0
+A4
+Text GLabel 7350 5400 1    50   Input ~ 0
+A3
+Text GLabel 7150 5400 1    50   Input ~ 0
+A2
+Text GLabel 7050 5400 1    50   Input ~ 0
+A1
+Text GLabel 6950 5400 1    50   Input ~ 0
+A0
+Text GLabel 6850 5400 1    50   Input ~ 0
+DQ0
+Text GLabel 6750 5400 1    50   Input ~ 0
+DQ1
+Text GLabel 3950 6800 0    50   Input ~ 0
+DQ0
+Text GLabel 3950 6900 0    50   Input ~ 0
+DQ1
+Text GLabel 6550 5400 1    50   Input ~ 0
+DQ2
+Text GLabel 3950 7000 0    50   Input ~ 0
+DQ2
+Text GLabel 6650 5400 1    50   Input ~ 0
+3V3
+Text GLabel 4650 7100 2    50   Input ~ 0
+DQ3
+Text GLabel 4650 7000 2    50   Input ~ 0
+DQ4
+Text GLabel 4650 6900 2    50   Input ~ 0
+DQ5
+Text GLabel 4650 6800 2    50   Input ~ 0
+DQ6
+Text GLabel 4650 6700 2    50   Input ~ 0
+DQ7
+Text GLabel 4650 6600 2    50   Input ~ 0
+CE
+Text GLabel 4650 6500 2    50   Input ~ 0
+A10
+Text GLabel 4650 6400 2    50   Input ~ 0
+OE
+Text GLabel 4650 6300 2    50   Input ~ 0
+A11
+Text GLabel 4650 6200 2    50   Input ~ 0
+A9
+Text GLabel 4650 6100 2    50   Input ~ 0
+A8
+Text GLabel 4650 6000 2    50   Input ~ 0
+A13
+Text GLabel 4650 5900 2    50   Input ~ 0
+WE
+Text GLabel 6450 5400 1    50   Input ~ 0
+DQ3
+Text GLabel 6350 5400 1    50   Input ~ 0
+DQ4
+Text GLabel 6250 5400 1    50   Input ~ 0
+DQ5
+Text GLabel 6150 5400 1    50   Input ~ 0
+DQ5
+Text GLabel 5750 5900 0    50   Input ~ 0
+DQ6
+Text GLabel 5750 6000 0    50   Input ~ 0
+DQ7
+Text GLabel 5750 6100 0    50   Input ~ 0
+A10
+Text GLabel 5750 6200 0    50   Input ~ 0
+OE
+Text GLabel 8200 6600 2    50   Input ~ 0
+A11
+Text GLabel 8200 6500 2    50   Input ~ 0
+A9
+Text GLabel 8200 6400 2    50   Input ~ 0
+A8
+Text GLabel 8200 6300 2    50   Input ~ 0
+A13
+Text GLabel 8200 6200 2    50   Input ~ 0
+WE
+$Comp
+L Device:R R11
+U 1 1 5F400CEE
+P 4300 5350
+F 0 "R11" H 4370 5396 50  0000 L CNN
+F 1 "10K" H 4370 5305 50  0000 L CNN
+F 2 "GCPLUS2_4LAYER:R_0402_custom" V 4230 5350 50  0001 C CNN
+F 3 "~" H 4300 5350 50  0001 C CNN
+	1    4300 5350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4450 5350 2    50   Input ~ 0
+WE
+Text GLabel 4150 5350 0    50   Input ~ 0
+3V3
+$Comp
+L Device:R R13
+U 1 1 5F403D3E
+P 8550 5850
+F 0 "R13" H 8620 5896 50  0000 L CNN
+F 1 "10K" H 8620 5805 50  0000 L CNN
+F 2 "GCPLUS2_4LAYER:R_0402_custom" V 8480 5850 50  0001 C CNN
+F 3 "~" H 8550 5850 50  0001 C CNN
+	1    8550 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 6000 8550 6000
+$Comp
+L power:GND #PWR0145
+U 1 1 5F414168
+P 8550 5700
+F 0 "#PWR0145" H 8550 5450 50  0001 C CNN
+F 1 "GND" H 8555 5527 50  0000 C CNN
+F 2 "" H 8550 5700 50  0001 C CNN
+F 3 "" H 8550 5700 50  0001 C CNN
+	1    8550 5700
+	-1   0    0    1   
+$EndComp
+Text GLabel 8150 4150 2    50   Input ~ 0
+SX
+Text GLabel 8150 4250 2    50   Input ~ 0
+SY
+$Comp
+L power:GND #PWR0101
+U 1 1 646B1BF6
+P 8150 4350
+F 0 "#PWR0101" H 8150 4100 50  0001 C CNN
+F 1 "GND" V 8155 4222 50  0000 R CNN
+F 2 "" H 8150 4350 50  0001 C CNN
+F 3 "" H 8150 4350 50  0001 C CNN
+	1    8150 4350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 8150 4450 2    50   Input ~ 0
+3V3
+$Comp
+L Connector:TestPoint TP1
+U 1 1 646C7F14
+P 8150 2200
+F 0 "TP1" V 8150 2850 50  0000 C CNN
+F 1 "TestPoint" V 8150 2550 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 2200 50  0001 C CNN
+F 3 "~" H 8350 2200 50  0001 C CNN
+	1    8150 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 646C8FB8
+P 8150 2300
+F 0 "TP2" V 8150 2950 50  0000 C CNN
+F 1 "TestPoint" V 8150 2650 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 2300 50  0001 C CNN
+F 3 "~" H 8350 2300 50  0001 C CNN
+	1    8150 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 646C9385
+P 8150 2400
+F 0 "TP3" V 8150 3050 50  0000 C CNN
+F 1 "TestPoint" V 8150 2750 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 2400 50  0001 C CNN
+F 3 "~" H 8350 2400 50  0001 C CNN
+	1    8150 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 646C961A
+P 8150 2550
+F 0 "TP4" V 8150 3200 50  0000 C CNN
+F 1 "TestPoint" V 8150 2900 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 2550 50  0001 C CNN
+F 3 "~" H 8350 2550 50  0001 C CNN
+	1    8150 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 646C9A07
+P 8150 2650
+F 0 "TP5" V 8150 3300 50  0000 C CNN
+F 1 "TestPoint" V 8150 3000 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 2650 50  0001 C CNN
+F 3 "~" H 8350 2650 50  0001 C CNN
+	1    8150 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 646CA908
+P 8150 2900
+F 0 "TP7" V 8150 3550 50  0000 C CNN
+F 1 "TestPoint" V 8150 3250 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 2900 50  0001 C CNN
+F 3 "~" H 8350 2900 50  0001 C CNN
+	1    8150 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 646CA90E
+P 8150 3000
+F 0 "TP8" V 8150 3650 50  0000 C CNN
+F 1 "TestPoint" V 8150 3350 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 3000 50  0001 C CNN
+F 3 "~" H 8350 3000 50  0001 C CNN
+	1    8150 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP10
+U 1 1 646CAD1F
+P 8150 3250
+F 0 "TP10" V 8150 3900 50  0000 C CNN
+F 1 "TestPoint" V 8150 3600 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 3250 50  0001 C CNN
+F 3 "~" H 8350 3250 50  0001 C CNN
+	1    8150 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 646CAD25
+P 8150 3350
+F 0 "TP11" V 8150 4000 50  0000 C CNN
+F 1 "TestPoint" V 8150 3700 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 3350 50  0001 C CNN
+F 3 "~" H 8350 3350 50  0001 C CNN
+	1    8150 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP12
+U 1 1 646CB154
+P 8150 3450
+F 0 "TP12" V 8150 4100 50  0000 C CNN
+F 1 "TestPoint" V 8150 3800 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 3450 50  0001 C CNN
+F 3 "~" H 8350 3450 50  0001 C CNN
+	1    8150 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP13
+U 1 1 646CB15A
+P 8150 3550
+F 0 "TP13" V 8150 4200 50  0000 C CNN
+F 1 "TestPoint" V 8150 3900 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 3550 50  0001 C CNN
+F 3 "~" H 8350 3550 50  0001 C CNN
+	1    8150 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP14
+U 1 1 646CB5C9
+P 8150 3700
+F 0 "TP14" V 8150 4350 50  0000 C CNN
+F 1 "TestPoint" V 8150 4050 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 3700 50  0001 C CNN
+F 3 "~" H 8350 3700 50  0001 C CNN
+	1    8150 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP15
+U 1 1 646CB5CF
+P 8150 3800
+F 0 "TP15" V 8150 4450 50  0000 C CNN
+F 1 "TestPoint" V 8150 4150 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 3800 50  0001 C CNN
+F 3 "~" H 8350 3800 50  0001 C CNN
+	1    8150 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP16
+U 1 1 646CB988
+P 8150 3900
+F 0 "TP16" V 8150 4550 50  0000 C CNN
+F 1 "TestPoint" V 8150 4250 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 3900 50  0001 C CNN
+F 3 "~" H 8350 3900 50  0001 C CNN
+	1    8150 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP17
+U 1 1 646CB98E
+P 8150 4000
+F 0 "TP17" V 8150 4650 50  0000 C CNN
+F 1 "TestPoint" V 8150 4350 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 4000 50  0001 C CNN
+F 3 "~" H 8350 4000 50  0001 C CNN
+	1    8150 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP18
+U 1 1 646CBEF9
+P 8150 4150
+F 0 "TP18" V 8150 4800 50  0000 C CNN
+F 1 "TestPoint" V 8150 4500 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 4150 50  0001 C CNN
+F 3 "~" H 8350 4150 50  0001 C CNN
+	1    8150 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP19
+U 1 1 646CBEFF
+P 8150 4250
+F 0 "TP19" V 8150 4900 50  0000 C CNN
+F 1 "TestPoint" V 8150 4600 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 4250 50  0001 C CNN
+F 3 "~" H 8350 4250 50  0001 C CNN
+	1    8150 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP20
+U 1 1 646CC248
+P 8150 4350
+F 0 "TP20" V 8150 5000 50  0000 C CNN
+F 1 "TestPoint" V 8150 4700 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 4350 50  0001 C CNN
+F 3 "~" H 8350 4350 50  0001 C CNN
+	1    8150 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP21
+U 1 1 646CC24E
+P 8150 4450
+F 0 "TP21" V 8150 5100 50  0000 C CNN
+F 1 "TestPoint" V 8150 4800 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 4450 50  0001 C CNN
+F 3 "~" H 8350 4450 50  0001 C CNN
+	1    8150 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 646CCCD7
+P 8150 2750
+F 0 "TP6" V 8150 3400 50  0000 C CNN
+F 1 "TestPoint" V 8150 3100 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 2750 50  0001 C CNN
+F 3 "~" H 8350 2750 50  0001 C CNN
+	1    8150 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP9
+U 1 1 646CCCDD
+P 8150 3100
+F 0 "TP9" V 8150 3750 50  0000 C CNN
+F 1 "TestPoint" V 8150 3450 50  0000 C CNN
+F 2 "GCPLUS2_4LAYER:pad_castellated1" H 8350 3100 50  0001 C CNN
+F 3 "~" H 8350 3100 50  0001 C CNN
+	1    8150 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 646964A1
+P 4300 5050
+F 0 "R2" H 4370 5096 50  0000 L CNN
+F 1 "10K" H 4370 5005 50  0000 L CNN
+F 2 "GCPLUS2_4LAYER:R_0402_custom" V 4230 5050 50  0001 C CNN
+F 3 "~" H 4300 5050 50  0001 C CNN
+	1    4300 5050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4450 5050 2    50   Input ~ 0
+CE
+Text GLabel 4150 5050 0    50   Input ~ 0
+3V3
+Text GLabel 8200 6100 2    50   Input ~ 0
+CE
+Text GLabel 11650 7050 3    50   Input ~ 0
+Z
+Text GLabel 12350 6550 2    50   Input ~ 0
+R
+Wire Wire Line
+	12350 6250 12550 6250
+Wire Wire Line
+	12550 6250 12550 5950
+Wire Wire Line
+	12650 6350 12650 5950
+Wire Wire Line
+	12350 6350 12650 6350
+$EndSCHEMATC

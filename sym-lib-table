@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "UniAmp-cache")(type "Legacy")(uri "C:/Users/Gunnar/Desktop/U-AMP/UAMP PCB FILES/UniAmp-cache.lib")(options "")(descr ""))
+  (lib (name "N64SP-PCB-rescue")(type "Legacy")(uri "${KIPRJMOD}/N64SP PCB-rescue.lib")(options "")(descr ""))
+  (lib (name "N64SP PCB-rescue")(type "KiCad")(uri "${KIPRJMOD}/N64SP PCB-rescue.kicad_sym")(options "")(descr ""))
+)
