@@ -739,7 +739,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "N64SP PCB.net",
-      "plot": "",
+      "plot": "N64Controller_NoCastellization_GERBER/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
